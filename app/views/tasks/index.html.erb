@@ -7,9 +7,9 @@
     <% else %>
     ❌
     <% end %>
-    <%= task.title.capitalize%>
+    <%= link_to task.title.capitalize, task %>
 
 </li>
   <% end %>
 </ul>
-<%= link_to 'Add a new Task', tasks_path %>
+<%= link_to 'Add a new Task', tasks_new_path %>
